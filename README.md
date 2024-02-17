@@ -14,6 +14,7 @@ Website Backend:
 2. Filter for Questions
 3. Return Final Questions - put a cap on this?
    1. Professor can see list of questions, 
+   2. Professor can see NUMBER OF QUESTIONS IN CLUSTER
 
 Model Backend:
 
