@@ -1,0 +1,23 @@
+<form>
+  <label for="textInput">Enter text:</label><br>
+  <input type="text" id="textInput" name="textInput"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+    document.getElementById("textInputForm").addEventListener("submit", function(event) {
+      // Prevent the default form submission
+      event.preventDefault();
+    
+      // Get the value of the text input
+      var textInputValue = document.getElementById("textInput").value;
+    
+      // Store the value (for demonstration purposes, you can replace this with your storage mechanism)
+      localStorage.setItem("submittedText", textInputValue);
+    
+      // Optionally, you can do something else with the submitted text here
+      
+      // For demonstration, let's alert the stored text
+      alert("Text submitted: " + textInputValue);
+    });
+    </script>

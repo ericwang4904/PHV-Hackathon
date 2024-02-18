@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-from perplexity_api import Client
-from CONFIG import API_KEY
+from src.perplexity_api import Client
+from src.CONFIG import API_KEY
 
 client = Client(API_KEY)
 

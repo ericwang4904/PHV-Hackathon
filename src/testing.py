@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
-from cluster_model import cluster, cluster_df_to_dict
-from llm_summary import cluster_summaries
+from src.cluster_model import cluster, cluster_df_to_dict
+from src.llm_summary import cluster_summaries
 
 corpus = [
    #"What is a banana?",

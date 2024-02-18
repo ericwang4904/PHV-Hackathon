@@ -8,7 +8,7 @@ words = word_tokenize(text)
 freqTable = dict()                 
 for word in words:               
     word = word.lower()                 
-    if word in stopWords:                 
+    if word in stopWords:
         continue                  
     if word in freqTable:                       
         freqTable[word] += 1            
