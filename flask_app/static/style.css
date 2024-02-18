@@ -3,15 +3,26 @@
     padding: 0;
 }
 .container{
-    height: 100vh;
+    height: 50vh;
     width: 100vh;
-    background-image: url(background_image_pioneer_hacks.jpeg);
+    background-image: url('background_image_pioneer_hacks.jpeg');
     background-position: center;
     background-size: cover;
     padding-left: 5%;
     padding-right: 5%;
     box-sizing: border-box;
     position: relative;
+}
+
+.buttonText{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.buttonText h1{
+    font-size: 45px;
+    font-weight: lighter;
+    color: #40E0D0;
 }
 
 .navbar{
