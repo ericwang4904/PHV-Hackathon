@@ -6,7 +6,7 @@
 <title>Text Input</title>
 </head>
 <body>
-
+<h1>Accepting Questions: {{ g.session_status }}</h1>
 <form action="{{ url_for('submit_question') }}" method="post">
     <label for="student_name">Student Name:</label>
     <input type="text" id="student_name" name="student_name" required><br><br>

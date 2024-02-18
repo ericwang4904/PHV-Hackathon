@@ -6,7 +6,7 @@ from sklearn.cluster import AgglomerativeClustering
 
 embed_model = SentenceTransformer("all-MiniLM-L6-v2")
 
-def cluster(sent, radius):
+def cluster(df, radius):
    embed = embed_model.encode(df['sent'])
    embed = embed / np.linalg.norm(embed, axis=1, keepdims=True)
 
