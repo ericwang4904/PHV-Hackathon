@@ -4,34 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Sections</title>
-<head>
     <h1>Empty the Database</h1>
-    <body>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+
+<body>
     <form action="{{ url_for('empty_database') }}" method="post">
         <button type="submit">Empty Database</button>
     </form>
-    </body>
-</head>
-<head>
-    <h1>Toggle Question Submission. Currently is {{ g.session_status }}</h1>
-    <body>
+    <h1>Toggle Question Submission. Currently is {{ session_status }}</h1>
     <form action="{{ url_for('toggle_session') }}" method="post">
         <button type="submit">Toggle Session</button>
     </form>
-    </body>
-</head>
-<head>
     <h1>Generate Summaries!</h1>
-    <body>
     <form action="{{ url_for('summary') }}" method="post">
         <button type="submit">Generate Summary</button>
     </form>
-    </body>
-</head>
-<head>
     <h1>Summaries:</h1>
-    <body>
-    {{ g.summary_text }}
-    </body>
-</head>
+    <ul id="Summary">
+        {% for line in summary_text %}
+            <li>{{ line }}</li>
+        {% endfor %}
+    </ul>
+</body>
 </html>

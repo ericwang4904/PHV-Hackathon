@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholar Synopsis</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+</head>
+<body>
+    <div class="container">
+        <div class ="navbar">
+            <img src="{{url_for('static', filename='LogoPioneerHacks.png')}}" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class = "content">
+                <h1>Too many questions? Need a good summary? You've come to the right place.</h1>
+        </div>
+    </div>
+    <h1>If you are a student and want to submit a question, click below: </h1>
+    <button onclick="submitNew()">Submit a Question</button>
+    <h1> If you are a teacher and want to look at the generalized questions, click below: </h1>
+    <button onclick="questionsNew()">Read the Questions</button>
+    <script>
+        function submitNew() {
+            window.location.href = "student";
+        }
+        function questionsNew() {
+            window.location.href = "admin";
+        }
+    </script>
+</body>
+</html>
