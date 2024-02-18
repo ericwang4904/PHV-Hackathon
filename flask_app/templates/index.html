@@ -10,37 +10,37 @@
 
 <body>
     <div class="container">
-        <div class ="navbar">
-            <img src="{{ url_for('static', filename='LogoPioneerHacks.png') }}" class="logo">
-            <nav>
-                <ul>
-                    <li><a href=""x>Home</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class = "content">
-                <h1>Too many questions? Need a good summary? You've come to the right place.</h1>
-        </div>
-        <div class = "buttonText">
-            <h1>If you are a student and want to submit a question, click below: </h1>
-            <button onclick="submitNew()">Submit a Question</button>
-            <h1> If you are a teacher and and want to have session control, </h1>
-            <button onclick="questionsNew()">Admin Panel</button>
-            <h1> If you want to look at the question clusters, go to </h1>
-            <button onclick="clusterNew()">Read the Questions</button>
-            <script>
-                function submitNew() {
-                    window.location.href = "student";
-                }
-                function questionsNew() {
-                    window.location.href = "admin";
-                }
-                function clusterNew(){
-                    window.location.href = "question_clusters"
-                }
-            </script>
-            </div>
+    <div class ="navbar">
+        <img src="{{ url_for('static', filename='LogoPioneerHacks.png') }}" class="logo">
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+            </ul>
+        </nav>
     </div>
+    <div class = "content">
+            <h1>Too many questions? Need a good summary? You've come to the right place.</h1>
+    </div>
+    <div class = "buttonText">
+        <h1>If you are a student and want to submit a question, click below: </h1>
+        <button onclick="submitNew()">Submit a Question</button>
+        <h1> If you are a teacher and and want to have session control, </h1>
+        <button onclick="questionsNew()">Admin Panel</button>
+        <h1> If you want to look at the question clusters, go to </h1>
+        <button onclick="clusterNew()">Read the Questions</button>
+        <script>
+            function submitNew() {
+                window.location.href = "student";
+            }
+            function questionsNew() {
+                window.location.href = "admin";
+            }
+            function clusterNew(){
+                window.location.href = "question_clusters"
+            }
+        </script>
+        </div>
+        </div>
 </body>
 
 </html>

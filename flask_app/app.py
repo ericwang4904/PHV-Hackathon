@@ -67,14 +67,14 @@ def create_app():
             
                 df = pd.DataFrame()
                 df['sent'] = questions
-                df = cluster(df, 1.2)
+                df = cluster(df, 1.4)
                 cluster_dict = cluster_df_to_dict(df)
                 app.cluster_dict = cluster_dict
                 summaries = cluster_summaries(cluster_dict)
 
                 summary_text = []
                 for i,sum in enumerate(summaries):
-                    summary_text.append(f"{i+1}. {sum} (Num Questions: {len(cluster_dict[i])})")
+                    summary_text.append(f"{i+1}. {sum} ({len(cluster_dict[i])} questions)")
                 
                 print(cluster_dict)
 

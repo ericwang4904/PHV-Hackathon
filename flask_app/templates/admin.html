@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang = "en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Sections</title>
-    <h1>Empty the Database</h1>
     <link rel="stylesheet" type="text/css" href="../static/style.css">
+
 </head>
 
 <body>
+<div class="container">
+    <div class = "adminstuff">
+    <h1>Empty the Database</h1>
     <form action="{{ url_for('empty_database') }}" method="post">
         <button type="submit">Empty Database</button>
     </form>
@@ -26,5 +30,7 @@
             <li>{{ line }}</li>
         {% endfor %}
     </ul>
+    </div>
+</div>
 </body>
 </html>

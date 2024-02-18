@@ -1,10 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-}
-.container{
-    height: 50vh;
-    width: 100vh;
+
+}.container{
+    height: cover;
+    width: cover;
     background-image: url('background_image_pioneer_hacks.jpeg');
     background-position: center;
     background-size: cover;
@@ -13,16 +13,43 @@
     box-sizing: border-box;
     position: relative;
 }
+form{
+    text-indent: 50px;
+}
+
+fieldset {
+    background-color: #eeeeee;
+}
+
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+}
+.studentstuff{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Didot;
+    color: #333;
+}
+
+.adminstuff{
+    font-size: 16px;
+    font-weight: lighter;
+    font-family: Didot;
+    color: #333;
+}
 
 .buttonText{
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 0%;
+    margin-bottom: 0%;
 }
 
 .buttonText h1{
     font-size: 45px;
     font-weight: lighter;
-    color: #40E0D0;
+    font-family: Didot;
+    color: #f6a192;
 }
 
 .navbar{
@@ -40,16 +67,17 @@
 
 nav{
     flex:1;
-    padding-left: 60px;
+    padding-left: 0px;
 }
 
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 0px 20px;
+    margin: 0px 10px;
 }
 
 nav ul li a{
+    font-family: Optima;
     text-decoration: none;
     color: #333;
 }
@@ -58,13 +86,14 @@ nav ul li a{
     font-size: 60px;
     font-weight: 100;
     margin-top: 24px;
-    margin-bottom: 15px;
-    color:#232d60
+    margin-bottom: 16px;
+    color:	#f6a192;
+    font-family: Didot;
 }
 
 .content{
     margin-top: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 13%;
 }
 
 .content.btn{

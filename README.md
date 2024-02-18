@@ -1,7 +1,13 @@
 # PHV-Hackathon
 
+# THIS IS A DEMO APP. DO NOT USE EXCEPT FOR DEVELOPMENT!
+Limitations:
+- NO SECURITY for admin section; anyone user can query the LLM or delete the question database.
+- No flask production server
+- Untested compatability for multiple network instances (should work though)
+- Looks pretty dated in terms of UI
 
-## Parts
+# Parts
 Website UI:
 1. LOW PRIORITY
 
